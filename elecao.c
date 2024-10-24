@@ -295,6 +295,7 @@ int verificarSegundoTurno(FILE *boletim1Turno, Chapa *chapas, int *votosValidos)
 
     if (maiorPorcentagem > 50.0) {
         fprintf(boletim1Turno, "Candidato %s venceu no primeiro turno com %.2f%% dos votos validos!\n", chapas[indiceVencedor].nomeCandidato, maiorPorcentagem);
+        printf("Candidato %s venceu no primeiro turno com %.2f%% dos votos validos!\n", chapas[indiceVencedor].nomeCandidato, maiorPorcentagem);
         return 0;
     } else {
         int primeiro = -1, segundo = -1;
@@ -401,7 +402,7 @@ void limparBuffer(){
     while ((ch = getchar()) != '\n' && ch != EOF);
 }
 
-int main(){
+int main() {
     limparTerminal();
 
     FILE *boletim1Turno = fopen("Boletim_primeiro_Turno.txt", "w");
@@ -412,30 +413,33 @@ int main(){
 
     int votosBrancos = 0, votosNulos = 0, votosValidos = 0, votosTotais = 0;
     quantidadeChapas = quantChapas();
-    Chapa *chapas = cadastarChapas(NULL); 
+    Chapa *chapas = cadastarChapas(NULL);
 
     votacao(chapas, &votosBrancos, &votosNulos, quantidadeChapas);
     boletimDeUrna(boletim1Turno, chapas, &votosBrancos, &votosNulos, &votosValidos, &votosTotais, quantidadeChapas);
 
     if (verificarSegundoTurno(boletim1Turno, chapas, &votosValidos)) {
         limparTerminal();
-        printf("Vai ter Segundo Turno!\n");
 
-        votosBrancos = votosNulos = votosValidos = votosTotais = 0;
+        Chapa *chapas2Turno = candidatosSegundoTurno(boletim1Turno, chapas, NULL);
+
+        printf("Vai ter Segundo Turno com os candidatos %s e %s!\n", 
+               chapas2Turno[0].nomeCandidato, chapas2Turno[1].nomeCandidato);
 
         FILE *boletim2Turno = fopen("Boletim_segundo_Turno.txt", "w");
         if (!boletim2Turno) {
             perror("Erro ao abrir o arquivo do boletim do segundo turno");
             free(chapas);
+            free(chapas2Turno);
             fclose(boletim1Turno);
             return EXIT_FAILURE;
         }
 
-        Chapa *chapas2Turno = candidatosSegundoTurno(boletim1Turno, chapas, NULL);
+        votosBrancos = votosNulos = votosValidos = votosTotais = 0;
 
-        sleep(4); 
+        sleep(4);  
 
-        votacao(chapas2Turno, &votosBrancos, &votosNulos, 2); 
+        votacao(chapas2Turno, &votosBrancos, &votosNulos, 2);  
         boletimDeUrna(boletim2Turno, chapas2Turno, &votosBrancos, &votosNulos, &votosValidos, &votosTotais, 2);
         defineCandidatoEleito(boletim2Turno, chapas2Turno, &votosValidos);
 
@@ -448,3 +452,4 @@ int main(){
 
     return 0;
 }
+

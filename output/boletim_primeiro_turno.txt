@@ -1,18 +1,16 @@
-Candidato: Ozeias Moreira | Vice: Lucas Chaves | Votos: 8
-Candidato: Diego Vieira | Vice: Danilo Augusto | Votos: 4
-Candidato: Ana Clara | Vice: Isabela Stefanuto | Votos: 6
-Candidato: Gustav Adolf | Vice: Eduardo Alves | Votos: 2
-Total de votos validos: 20
+Candidato: Ozeias Moreira | Vice: Lucas Chaves | Votos: 3
+Candidato: Diego Vieira | Vice: Danilo Augusto | Votos: 3
+Candidato: Ana Clara | Vice: Isabela Stefanuto | Votos: 3
+Total de votos validos: 9
 Total de votos brancos: 0
 Total de votos nulos: 0
-Total de votos: 20
+Total de votos: 9
 
 
 Porcentagem de votos dos VOTOS TOTAIS:
-Candidato Ozeias Moreira: 40.00% dos votos totais
-Candidato Diego Vieira: 20.00% dos votos totais
-Candidato Ana Clara: 30.00% dos votos totais
-Candidato Gustav Adolf: 10.00% dos votos totais
+Candidato Ozeias Moreira: 33.33% dos votos totais
+Candidato Diego Vieira: 33.33% dos votos totais
+Candidato Ana Clara: 33.33% dos votos totais
 
 Votos validos: 100.00%
 Votos brancos: 0.00%
@@ -20,8 +18,7 @@ Votos nulos: 0.00%
 Total de votos: 100%
 
 Porcentagem de votos dos VOTOS VALIDOS:
-Candidato Ozeias Moreira: 40.00% dos votos validos
-Candidato Diego Vieira: 20.00% dos votos validos
-Candidato Ana Clara: 30.00% dos votos validos
-Candidato Gustav Adolf: 10.00% dos votos validos
-Segundo turno com os candidatos Ozeias Moreira e Ana Clara
+Candidato Ozeias Moreira: 33.33% dos votos validos
+Candidato Diego Vieira: 33.33% dos votos validos
+Candidato Ana Clara: 33.33% dos votos validos
+Segundo turno com os candidatos Ozeias Moreira e Diego Vieira
