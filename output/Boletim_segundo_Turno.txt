@@ -1,0 +1,21 @@
+Candidato: Ozeias Moreira | Vice: Lucas Chaves | Votos: 6
+Candidato: Ana Clara | Vice: Isabela Stefanuto | Votos: 4
+Total de votos validos: 10
+Total de votos brancos: 0
+Total de votos nulos: 0
+Total de votos: 10
+
+
+Porcentagem de votos dos VOTOS TOTAIS:
+Candidato Ozeias Moreira: 60.00% dos votos totais
+Candidato Ana Clara: 40.00% dos votos totais
+
+Votos validos: 100.00%
+Votos brancos: 0.00%
+Votos nulos: 0.00%
+Total de votos: 100%
+
+Porcentagem de votos dos VOTOS VALIDOS:
+Candidato Ozeias Moreira: 60.00% dos votos validos
+Candidato Ana Clara: 40.00% dos votos validos
+Prefeito eleito: Ozeias Moreira e Vice: Lucas Chaves
